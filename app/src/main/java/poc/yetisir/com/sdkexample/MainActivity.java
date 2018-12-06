@@ -13,6 +13,7 @@ import poc.yetisir.com.apilibrary.support.ServiceListener;
 
 public class MainActivity extends AppCompatActivity {
     private Api api;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         api.getNews(new ServiceListener() {
             @Override
             public void onSuccess(List<News> result) {
-                for (News temp : result){
+                for (News temp : result) {
                     Log.d("Activity_Result", temp.title);
                 }
             }

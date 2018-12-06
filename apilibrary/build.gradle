@@ -29,13 +29,15 @@ android {
 group = 'com.yetisir.sdkexample'
 version = '1.0.0'
 
+//Aşağıda ki kısım bintray kullanılarak SDK publification işlemi yapmak için
 bintray {
     user = 'mahmutyetisir03'
     key = '546d6db08255b2a492cd1b9435f9f1f891d4ba91'
     pkg {
-        repo = 'maven'
-        name = 'com.yetisir.sdkexample'
 
+        repo = 'sdk-example'
+        name = 'com.yetisir.sdkexample'
+        userOrg = 'yetisir'
         version {
             name = '1.0.0'
             desc = 'My test upload'
@@ -49,6 +51,8 @@ bintray {
     }
     configurations = ['archives']
 }
+
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
