@@ -55,3 +55,5 @@ api.getNews(new ServiceListener() {
 });
 ```
 - News Object: a news json object of top 20 News.
+
+Documentation: https://medium.com/kartaca/yeni-ba%C5%9Flayanlar-i%C3%A7in-android-k%C3%BCt%C3%BCphanesi-olu%C5%9Fturma-ve-bintray-ile-yay%C4%B1nlama-ab544b4c428d
